@@ -19,9 +19,15 @@ module.exports = {
     ]
   },
   plugins: [
+  	new webpack.HotModuleReplacementPlugin(),
   	new webpack.NamedModulesPlugin(),
   	new HtmlWebpackPlugin({
   		template: './index.html'
   	})
-  ]
+  ],
+  devServer: {
+  	port: 8081,
+  	contentBase: path.resolve(__dirname, 'dist'),
+  	hot: true
+  }
 }

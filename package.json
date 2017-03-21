@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --history-api-fallback --open"
+    "dev": "webpack-dev-server"
   },
   "keywords": [],
   "author": "xwillmadeit <xiesenzhengyi@gmail.com> (http://xwillmadeit.me/)",
