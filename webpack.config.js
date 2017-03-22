@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
 	entry: {
 		app: [
+      'webpack-hot-middleware/client?reload=true',
 	  	'react-hot-loader/patch',
 	    './index.js'
 	  ]
@@ -24,10 +25,5 @@ module.exports = {
   	new HtmlWebpackPlugin({
   		template: './index.html'
   	})
-  ],
-  devServer: {
-  	port: 8081,
-  	contentBase: path.resolve(__dirname, 'dist'),
-  	hot: true
-  }
+  ]
 }

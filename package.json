@@ -4,12 +4,13 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "babel-node server.js --presets env"
   },
   "keywords": [],
   "author": "xwillmadeit <xiesenzhengyi@gmail.com> (http://xwillmadeit.me/)",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.2.2",
@@ -17,9 +18,11 @@
     "html-webpack-plugin": "^2.28.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1"
   },
   "dependencies": {
+    "express": "^4.15.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }
